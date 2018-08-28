@@ -9,7 +9,7 @@
  * same zone, and be aware of DST etc.
  */
 
-const getTimestamp = (options) => {
+function getTimestamp(options) {
   const current = new Date();
   const offset = current.getTimezoneOffset();
   const offsetHours = parseInt(Math.abs(offset / 60));
