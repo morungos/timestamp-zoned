@@ -1,0 +1,11 @@
+{
+  "name": "timestamp-zoned",
+  "version": "1.0.0",
+  "description": "A small module that generates an ISO 8601 timestamp including a zone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stuart Watt <stuart@morungos.com>",
+  "license": "ISC"
+}
