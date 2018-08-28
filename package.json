@@ -4,8 +4,21 @@
   "description": "A small module that generates an ISO 8601 timestamp including a zone",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Stuart Watt <stuart@morungos.com>",
-  "license": "ISC"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^23.5.0"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/morungos/timestamp-zoned.git"
+  },  
+  "jest": {
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test))\\.js$"
+  }
 }
