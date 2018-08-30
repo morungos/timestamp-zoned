@@ -12,9 +12,9 @@
     "jest": "^23.5.0"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/morungos/timestamp-zoned.git"
-  },  
+    "type": "git",
+    "url": "https://github.com/morungos/timestamp-zoned.git"
+  },
   "jest": {
     "moduleFileExtensions": [
       "js"
