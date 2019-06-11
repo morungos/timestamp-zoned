@@ -9,7 +9,7 @@
   "author": "Stuart Watt <stuart@morungos.com>",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^23.5.0"
+    "jest": "^24.8.0"
   },
   "repository": {
     "type": "git",
