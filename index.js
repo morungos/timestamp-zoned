@@ -10,31 +10,31 @@
  */
 
 function getTimestamp(options) {
-  const current = new Date();
-  const offset = current.getTimezoneOffset();
-  const offsetHours = parseInt(Math.abs(offset / 60));
-  const offsetMinutes = Math.abs(offset % 60);
+  var current = new Date();
+  var offset = current.getTimezoneOffset();
+  var offsetHours = parseInt(Math.abs(offset / 60));
+  var offsetMinutes = Math.abs(offset % 60);
   
-  const currentDate = current.getDate();
-  const currentMonth = current.getMonth() + 1;
-  const currentYear = current.getFullYear();
-  const currentHours = current.getHours();
-  const currentMinutes = current.getMinutes();
-  const currentSeconds = current.getSeconds();
-  const currentMilliseconds = current.getMilliseconds();
+  var currentDate = current.getDate();
+  var currentMonth = current.getMonth() + 1;
+  var currentYear = current.getFullYear();
+  var currentHours = current.getHours();
+  var currentMinutes = current.getMinutes();
+  var currentSeconds = current.getSeconds();
+  var currentMilliseconds = current.getMilliseconds();
 
-  let zoneName = null;
+  var zoneName = null;
   if ((options && options.zone) && Intl) {
-    const options = new Intl.DateTimeFormat().resolvedOptions();
+    var options = new Intl.DateTimeFormat().resolvedOptions();
     if (options.timeZone) {
       zoneName = options.timeZone;
     }
   }
   
-  const date = `${currentYear}-${currentMonth < 10 ? '0' + currentMonth : currentMonth}-${currentDate < 10 ? '0' + currentDate : currentDate}`;
-  const time = `${currentHours < 10 ? '0' + currentHours : currentHours}:${currentMinutes < 10 ? '0' + currentMinutes : currentMinutes}:${currentSeconds < 10 ? '0' + currentSeconds : currentSeconds}.${currentMilliseconds < 10 ? '00' + currentMilliseconds : currentMilliseconds < 100 ? '0' + currentMilliseconds : currentMilliseconds}`;
-  const zone = offset === 0 ? "Z" : `${offset < 0 ? '+' : '-'}${offsetHours < 10 ? '0' + offsetHours : offsetHours}:${offsetMinutes < 10 ? '0' + offsetMinutes : offsetMinutes}`;
-  return `${date}T${time}${zone}${zoneName ? ' (' + zoneName + ')' : ''}`;
+  var date = currentYear + "-" + (currentMonth < 10 ? '0' + currentMonth : currentMonth) + "-" + (currentDate < 10 ? '0' + currentDate : currentDate);
+  var time = (currentHours < 10 ? '0' + currentHours : currentHours) + ":" + (currentMinutes < 10 ? '0' + currentMinutes : currentMinutes) + ":" + (currentSeconds < 10 ? '0' + currentSeconds : currentSeconds) + "." + (currentMilliseconds < 10 ? '00' + currentMilliseconds : currentMilliseconds < 100 ? '0' + currentMilliseconds : currentMilliseconds);
+  var zone = offset === 0 ? "Z" : (offset < 0 ? '+' : '-') + (offsetHours < 10 ? '0' + offsetHours : offsetHours) + ":" + (offsetMinutes < 10 ? '0' + offsetMinutes : offsetMinutes);
+  return date + "T" + time + zone + (zoneName ? ' (' + zoneName + ')' : '');
 };
 
 
