@@ -1,6 +1,6 @@
 {
   "name": "timestamp-zoned",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A small module that generates an ISO 8601 timestamp including a zone",
   "main": "index.js",
   "scripts": {
