@@ -1,6 +1,11 @@
 ## Change log
 
 
+### Version 1.0.4 -- 20th March 2020
+
+ * Fixed some audit issues in dependencies
+
+
 ### Version 1.0.3 -- 8th January 2020
 
  * Fixed some audit issues in dependencies
