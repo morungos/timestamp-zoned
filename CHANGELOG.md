@@ -1,6 +1,12 @@
 ## Change log
 
 
+### Version 1.0.5 -- 18th April 2021
+
+ * Corrected test script for location stability
+ * Fixed some audit issues in dependencies
+
+
 ### Version 1.0.4 -- 20th March 2020
 
  * Fixed some audit issues in dependencies
