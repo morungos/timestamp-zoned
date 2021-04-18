@@ -4,7 +4,7 @@
   "description": "A small module that generates an ISO 8601 timestamp including a zone",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "TZ=America/Toronto jest"
   },
   "author": "Stuart Watt <stuart@morungos.com>",
   "license": "MIT",
