@@ -1,5 +1,7 @@
 ## Quick ISO 8601 timestamps that definitely include the timezone
 
+![test workflow](https://github.com/morungos/timestamp-zoned/actions/workflows/main.yml/badge.svg)
+
 The standard JS APIs for dates don't necessarily include the current 
 timezone, because it's all open. This uses the current timezone 
 information to make sure you get the zone information you need.
